@@ -7,8 +7,16 @@ section {
   padding-top: 4rem;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 .section-title {
-  @extend .col-md-2;
+  h1 {
+    font-weight: 300;
+    color: $gray-light;
+  }
+  @extend .col-md-3;
   @media (min-width: $screen-md) {
     text-align: right;
     h1 {
@@ -17,13 +25,22 @@ section {
   }
 }
 
+body {
+  padding-bottom: 8rem;
+}
+
 .section-content {
-  @extend .col-md-10;
+  @extend .col-md-9;
   @media (min-width: $screen-md) {
     h2:first-child {
       margin-top: 0;
     }
   }
+}
+
+p.lead {
+  font-size: $font-size-base * 1.15;
+  margin-bottom: 0;
 }
 
 #masthead {
@@ -46,7 +63,11 @@ section {
 }
 
 #profiles {
-  ul {
-    @extend .list-inline;
+  .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }

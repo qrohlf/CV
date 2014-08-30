@@ -1,0 +1,13 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+          %title Quinn Rohlf &middot; CV
+          = stylesheet_link_tag "application"
+          %link{:href => "http://i.icomoon.io/public/temp/43666d8694/CV/style.css", :rel => "stylesheet"}
+  %body
+    = yield
+    = javascript_include_tag  "application"
+    %script{:src => "//use.edgefonts.net/lato:n1,i1,n3,i3,n4,i4,n7,i7,n9,i9;open-sans:n3,i3,n4,i4,n6,i6,n7,i7,n8,i8.js"}
