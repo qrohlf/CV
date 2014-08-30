@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import 'variables';
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+
+section {
+  padding-top: 4rem;
+}
+
+.section-title {
+  @extend .col-md-2;
+  @media (min-width: $screen-md) {
+    text-align: right;
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
+
+.section-content {
+  @extend .col-md-10;
+  @media (min-width: $screen-md) {
+    h2:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+#masthead {
+  background: $gray-lighter;
+  padding: 6rem 0;
+}
+
+#skills {
+  ul {
+    @extend .list-inline;
+    margin-left: 0; //Bootstrap is dumb
+  }
+  li {
+    @extend .label;
+    // font-size: $font-size-base;
+    background-color: darken(white, 50%);
+    // color: inherit;
+    // font-weight: normal;
+  }
+}
+
+#profiles {
+  ul {
+    @extend .list-inline;
+  }
+}
