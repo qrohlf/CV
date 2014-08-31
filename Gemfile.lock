@@ -39,11 +39,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    em-websocket (0.5.1)
-      eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     execjs (2.2.1)
     ffi (1.9.3)
     haml (4.0.5)
@@ -51,7 +47,6 @@ GEM
     hike (1.2.3)
     hooks (0.4.0)
       uber (~> 0.0.4)
-    http_parser.rb (0.6.0)
     i18n (0.6.11)
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
@@ -85,11 +80,6 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
     middleman-sprockets (3.3.9)
       middleman-core (~> 3.3)
       sprockets (~> 2.12.1)
@@ -106,8 +96,8 @@ GEM
     puma (2.8.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
-    rack-livereload (0.3.15)
-      rack
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails-assets-chartjs (0.2.0)
@@ -153,9 +143,7 @@ DEPENDENCIES
   coffee-script
   jquery-rails
   middleman (~> 3.3.5)
-  middleman-livereload (~> 3.1.0)
   puma
+  rack-contrib (~> 1.1.0)
   rails-assets-chartjs
   rails-assets-trianglify (~> 0.1.4)
-  tzinfo-data
-  wdm (~> 0.1.0)
