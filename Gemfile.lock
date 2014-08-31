@@ -109,6 +109,9 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rails-assets-chartjs (0.2.0)
+    rails-assets-d3 (3.4.11)
+    rails-assets-trianglify (0.1.4)
+      rails-assets-d3 (~> 3.4.11)
     railties (4.1.5)
       actionpack (= 4.1.5)
       activesupport (= 4.1.5)
@@ -145,9 +148,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  coffee-script
   jquery-rails
   middleman (~> 3.3.5)
   middleman-livereload (~> 3.1.0)
   rails-assets-chartjs
+  rails-assets-trianglify (~> 0.1.4)
   tzinfo-data
   wdm (~> 0.1.0)
