@@ -28,3 +28,6 @@ gem "rails-assets-trianglify", "~>0.1.4", require: false
 
 # Coffee!
 gem "coffee-script", require:false
+
+# Development Server!
+gem "puma"
