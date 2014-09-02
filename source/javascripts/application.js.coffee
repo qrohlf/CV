@@ -1,10 +1,7 @@
 #= require jquery
 #= require bootstrap-sprockets
-#= require chartjs
 #= require d3
 #= require trianglify
-#= require_tree .
-
 
 $(document).ready ->
   colors = ["#853d59", "#b05478"]

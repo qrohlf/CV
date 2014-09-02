@@ -11,9 +11,6 @@ gem 'jquery-rails', require: false
 # Bootstrap!
 gem "bootstrap-sass", require: false
 
-# Charts!
-gem "rails-assets-chartjs", require: false
-
 # Triangles!
 gem "rails-assets-trianglify", "~>0.1.4", require: false
 

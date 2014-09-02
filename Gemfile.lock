@@ -100,7 +100,6 @@ GEM
       rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails-assets-chartjs (0.2.0)
     rails-assets-d3 (3.4.11)
     rails-assets-trianglify (0.1.4)
       rails-assets-d3 (~> 3.4.11)
@@ -145,5 +144,4 @@ DEPENDENCIES
   middleman (~> 3.3.5)
   puma
   rack-contrib (~> 1.1.0)
-  rails-assets-chartjs
   rails-assets-trianglify (~> 0.1.4)
