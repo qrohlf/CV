@@ -13,8 +13,4 @@ $(document).ready ->
     fillOpacity: 0.5
   )
   header = $('#masthead')
-  header.css(
-    'background-image',
-    t.generate(header.outerWidth(),
-    header.outerHeight()).dataUrl
-  )
+  header.prepend( t.generate(header.outerWidth(), header.outerHeight()).svg )

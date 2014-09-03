@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import 'variables';
 @import "bootstrap-sprockets";
-@import 'bootstrap';
+@import 'bootstrap-custom';
 @import 'icomoon';
 
 section {
@@ -17,8 +17,8 @@ h3 {
     font-weight: 300;
     color: $brand-danger;
   }
-  @extend .col-md-3;
-  @media (min-width: $screen-md) {
+  @extend .col-sm-3;
+  @media (min-width: $screen-sm-min) {
     text-align: right;
     h1 {
       margin-top: 0;
@@ -31,8 +31,8 @@ body {
 }
 
 .section-content {
-  @extend .col-md-9;
-  @media (min-width: $screen-md) {
+  @extend .col-sm-9;
+  @media (min-width: $screen-sm-min) {
     h2:first-child {
       margin-top: 0;
     }
@@ -45,10 +45,23 @@ p.lead {
 }
 
 #masthead {
-  // background: $brand-primary;
-  background: lighten($brand-warning, 10%);
+  background-color: lighten($brand-warning, 10%);
   color: white;
   padding: 6rem 0;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  h1, h2 {color: white}
+  svg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    z-index: 0;
+  }
+  overflow: hidden;
 }
 
 #skills {
@@ -67,10 +80,28 @@ p.lead {
 
 #profiles {
   .btn {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
     &:first-child {
       margin-left: 0;
     }
+  }
+}
+
+@media print {
+  @include loop-grid-columns($grid-columns, print, width);
+
+  .section-title, .section-content {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-title {
+    @extend .col-print-3;
+    text-align: right;
+  }
+  .section-content {
+    @extend .col-print-9;
   }
 }

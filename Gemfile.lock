@@ -133,6 +133,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    wkhtmltopdf-binary (0.9.9.3)
 
 PLATFORMS
   ruby
@@ -145,3 +146,4 @@ DEPENDENCIES
   puma
   rack-contrib (~> 1.1.0)
   rails-assets-trianglify (~> 0.1.4)
+  wkhtmltopdf-binary

@@ -20,3 +20,4 @@ gem "coffee-script", require:false
 # Deployment stuff
 gem "puma"
 gem 'rack-contrib', '~> 1.1.0'
+gem 'wkhtmltopdf-binary'
