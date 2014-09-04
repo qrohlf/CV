@@ -13,4 +13,5 @@ $(document).ready ->
     fillOpacity: 0.5
   )
   header = $('#masthead')
-  header.prepend( t.generate(header.outerWidth(), header.outerHeight()).svg )
+  window.pattern = t.generate(header.outerWidth(), header.outerHeight()).svg
+  header.prepend(pattern)
